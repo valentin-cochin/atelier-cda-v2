@@ -1,10 +1,13 @@
 package com.cda.zprog;
 
 import com.cda.calc.ICalculateur;
+import com.cda.calc.CalculateurQuentin;
 
 public class Program {
 	public static void main(String[] args) {
 		String vParam = "CDA-20285";
+		
+		ICalculateur.CALCULATEURS.add(new CalculateurQuentin());
 
 		for (ICalculateur vCalculateur : ICalculateur.CALCULATEURS) {
 
